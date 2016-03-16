@@ -4,7 +4,8 @@ xml_server
 OTP XML to proplist parsing server
 
 
-Import a new OTP application to be embedded in a larger application.
+An OTP application to be embedded in a larger application.
+
 The role of this application is to provide an XML to proplist parsing server.
 
     1> application:start(xml_server).
@@ -28,6 +29,7 @@ In your src/yourapp.app.src:
        ]},
 
 Of course this OTP application is composed of an application, a supervisor and a gen_server.
+
 Please note that this module is designed to work with rebar3 exclusively.
 
 Build
