@@ -1,6 +1,6 @@
 {application, xml_server,
- [{description, "OTP XML server"},
-  {vsn, "0.1.0"},
+ [{description, "XML->proplist parsing server"},
+  {vsn, "1.0.0"},
   {registered, []},
   {mod, { xml_server_app, []}},
   {applications,

@@ -1,7 +1,7 @@
 xml_server
 =====
 
-OTP XML server
+OTP XML to proplist parsing server
 
 Build
 -----
