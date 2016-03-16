@@ -5,7 +5,7 @@ OTP XML to proplist parsing server
 
 
 Import a new OTP application to be embedded in a larger application.
-The role of this application is to provide an XML->proplist parsing server.
+The role of this application is to provide an XML to proplist parsing server.
 
     1> application:start(xml_server).
     ok
@@ -13,13 +13,13 @@ The role of this application is to provide an XML->proplist parsing server.
     2> xml_server_worker:parse(<<"XML content">>).
     ...
 
-    rebar.config:
+In your rebar.config:
 
     {deps, [
         {xml_server, {git, "git://github.com/rbenaley/xml_server", {branch, master}}}
     ]}.
 
-    src/yourapp.app.src:
+In your src/yourapp.app.src:
 
       {applications,
        [kernel,
