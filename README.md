@@ -7,8 +7,8 @@ OTP XML to proplist parsing server
 Import a new OTP application to be embedded in a larger application.
 The role of this application is to provide an XML->proplist parsing server.
 
-1> application:start(xml_server).
-ok
+    1> application:start(xml_server).
+    ok
 
 2> xml_server_worker:parse(<<"XML content">>).
 ...
